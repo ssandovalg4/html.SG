@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my pagina web</title> 
+     <link rel="stylesheet" href="estilos.css"> 
+</head>
+<body>
+    <header>
+        <h1> MI PAGINA</h1>
+    </header> 
+    <nav>
+        <a onclick="mostrarSeccion('Inicio') ">Inicio</a> 
+        <a onclick="mostrarSeccion('SobreMi')">Sobre Mi</a> 
+        <a onclick="mostrarSeccion('contacto')">contacto</a>
+    </nav> 
+    <main> 
+         
+        <section id="Inicio" class="active"> 
+            <h2>Inicio</h2> 
+            <p>Bienvenido a mi pagina web</p> 
+            <img src="Its peak.webp" alt="peak" >
+            <a href="https://www.google.com" target="blank">Ir a google</a>
+            
+        </section> 
+
+        <!--Seccion 2: SobreMi--> 
+       <section id="SobreMi"> 
+    <h2>SobreMi</h2>  
+    <p>Soy estudiante de la umg</p>
+</section>
+
+<section id="contacto"> 
+    <h2>contacto</h2>  
+
+    <form onsubmit="enviarformulario(event)"> 
+        <label>Nombre:</label> 
+        <input type="text" id="Nombre" required> 
+
+        <label>correo:</label> 
+        <input type="email" required> 
+
+        <label>Mensaje</label> 
+        <textarea required></textarea> 
+
+        <button type="submit">enviar</button>
+      </form> 
+         </section>
+            <aside>
+                <h3>Informacion</h3> 
+                <p>Introducion a Sistemas</p>
+            </aside>
+    </main>
+
+<footer>
+    <p>(c) 2026 peak</p>
+</footer>  
+<script src="script.js"></script>   
+</body>
+</html> 
